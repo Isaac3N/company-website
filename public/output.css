@@ -596,13 +596,34 @@ video {
   visibility: visible;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-left-36 {
+  left: -9rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mt-10 {
@@ -611,6 +632,30 @@ video {
 
 .mb-32 {
   margin-bottom: 8rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-60 {
+  margin-top: 15rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .block {
@@ -689,6 +734,14 @@ video {
   height: 0.5rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-14 {
   width: 3.5rem;
 }
@@ -699,6 +752,46 @@ video {
 
 .w-1 {
   width: 0.25rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-2\/5 {
+  width: 40%;
 }
 
 .max-w-md {
@@ -741,6 +834,10 @@ video {
   flex-direction: column-reverse;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -771,6 +868,11 @@ video {
 
 .justify-items-end {
   justify-items: end;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -815,8 +917,17 @@ video {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .border {
@@ -831,6 +942,16 @@ video {
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
+.bg-green-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -905,6 +1026,26 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -925,6 +1066,16 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -955,16 +1106,26 @@ video {
   outline-style: solid;
 }
 
-body {
-  background-image: url("../public/img/bg-hero-section.svg");
-  background-repeat: no-repeat;
-  background-size: 800px;
-  background-position: 150% 295%;
-}
+/* body {
+	background-image: url("../public/img/bg-hero-section.svg");
+	background-repeat: no-repeat;
+	background-size: 800px;
+	background-position: 150% 295%;
+} */
 
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:h-3\/4 {
+    height: 75%;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -976,8 +1137,16 @@ body {
     display: flex;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
@@ -995,5 +1164,43 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:-left-36 {
+    left: -9rem;
+  }
+
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 }
