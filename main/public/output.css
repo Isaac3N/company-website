@@ -628,6 +628,38 @@ video {
   bottom: 2.5rem;
 }
 
+.left-36 {
+  left: 9rem;
+}
+
+.left-72 {
+  left: 18rem;
+}
+
+.right-11 {
+  right: 2.75rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
+.right-48 {
+  right: 12rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -818,20 +850,12 @@ video {
   width: 100vw;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-0\.5 {
-  width: 0.125rem;
-}
-
 .w-0 {
   width: 0px;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-md {
@@ -1277,12 +1301,12 @@ video {
   transition-duration: 150ms;
 }
 
-/* body {
-	background-image: url("../public/img/bg-hero-section.svg");
-	background-repeat: no-repeat;
-	background-size: 900px;
-	background-position: top -8% right -15%;
-} */
+.bg-pattern {
+  background-image: url("../public/img/bg-hero-section.svg");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: top -8% right -15%;
+}
 
 /* Email List */
 
@@ -1521,8 +1545,8 @@ video {
     left: -9rem;
   }
 
-  .lg\:-right-36 {
-    right: -9rem;
+  .lg\:right-0 {
+    right: 0px;
   }
 
   .lg\:mt-24 {
@@ -1535,14 +1559,6 @@ video {
 
   .lg\:mb-16 {
     margin-bottom: 4rem;
-  }
-
-  .lg\:mt-60 {
-    margin-top: 15rem;
-  }
-
-  .lg\:mt-52 {
-    margin-top: 13rem;
   }
 
   .lg\:block {

@@ -15,24 +15,28 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="/public/output.css" rel="stylesheet" />
+		<link href="/main/public/output.css" rel="stylesheet" />
 		<title>Newton and Emberly Limited</title>
 	</head>
 
-	<body>
+	<body class="bg-pattern">
 		<!-- Navbar -->
 		<nav class="relative container mx-auto py-6">
 			<div class="flex items-center justify-between">
 				<!-- Logo -->
-				<div class="pt-2">
-					<img src="/public/img/logo.png" alt="" class="h-11" />
-				</div>
+				<a class="pt-2" href="#home">
+					<img src="/main/public/img/logo.png" alt="" class="h-11" />
+				</a>
 				<!-- Menu Items -->
 				<div class="hidden space-x-6 md:flex">
-					<a href="#" class="hover:text-company-grey">About Us</a>
-					<a href="#" class="hover:text-company-grey">Meet Our Team</a>
-					<a href="#" class="hover:text-company-grey">Our subsidiaries</a>
-					<a href="#">Contact Us</a>
+					<a href="#about-us" class="hover:text-company-grey">About Us</a>
+					<a href="#meet-our-team" class="hover:text-company-grey"
+						>Meet Our Team</a
+					>
+					<a href="./our-subsidiaries.html" class="hover:text-company-grey"
+						>Our subsidiaries</a
+					>
+					<a href="#contact-us">Contact Us</a>
 				</div>
 				<!-- Contact us Button -->
 				<a
@@ -43,7 +47,7 @@
 			</div>
 		</nav>
 		<!-- HeroSection -->
-		<section id="hero">
+		<section id="home">
 			<!-- Flex container -->
 			<div
 				class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row"
@@ -95,7 +99,7 @@
 					<div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
 						<img
 							class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full z-10 px-24"
-							src="/public/img/About-us-image.jpg"
+							src="./img/About-us-image.jpg"
 							alt=""
 						/>
 					</div>
@@ -239,7 +243,7 @@
 		</section>
 		<!-- Meet Our Team Section -->
 
-		<section class="py-10 mt-20">
+		<section id="meet-our-team" class="py-10 mt-20">
 			<div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
 				<h1 class="text-3xl text-center font-bold">Meet Our Team</h1>
 				<p class="text-center text-gray-400 mt-4">
@@ -474,30 +478,7 @@
 		</section>
 
 		<!-- Newton and Emberly Email listing page -->
-		<footer class="bg-green-700">
-			<!-- <form
-				action="https://formsubmit.co/info@newtonandemeberlyltd.com"
-				method="POST"
-			>
-				<input type="text" name="name" placeholder="John Doe" required />
-				<input
-					type="email"
-					name="email"
-					placeholder="name@example.com"
-					required
-				/>
-				<input
-					type="hidden"
-					name="_next"
-					value="http://127.0.0.1:5501/public/thank-you.html"
-				/>
-				<input
-					type="text"
-					name="message"
-					placeholder="Write Your message here!"
-				/>
-				<button type="submit">Send</button>
-			</form> -->
+		<footer id="contact-us" class="bg-green-700">
 			<div class="footer-container">
 				<section class="footer-subscription">
 					<p class="footer-subscription-heading">Contact Us Today!</p>
@@ -506,48 +487,47 @@
 					</p>
 
 					<div class="w-full md:w-96 md:max-w-full mx-auto">
-						<div>
-							<form
-								method="POST"
-								action="https://formsubmit.co/newtonandemberly@gmail.com"
-								class="text-gray-900"
-							>
-								<label class="block mb-6">
-									<input
-										type="text"
-										class="block w-full h-11 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-										placeholder="Name"
-										required
-									/>
-								</label>
-								<label class="block mb-6">
-									<input
-										name="email"
-										type="email"
-										class="block w-full h-11 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-										placeholder="Email Address"
-										required
-									/>
-								</label>
-								<label class="block mb-6">
-									<textarea
-										name="message"
-										class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-										rows="10"
-										placeholder="Tell us why you want to hear from us..."
-										required
-									></textarea>
-								</label>
-								<div class="mb-6">
-									<button type="submit" class="text-white">Submit!</button>
-								</div>
+						<form
+							method="POST"
+							action="https://formsubmit.co/newtonandemberly@gmail.com"
+							class="text-gray-900"
+						>
+							<label class="block mb-6">
 								<input
-									type="hidden"
-									name="_next"
-									value="http://127.0.0.1:5501/public/thank-you.html"
+									type="text"
+									class="block w-full h-11 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+									placeholder="Name"
+									required
 								/>
-							</form>
-						</div>
+							</label>
+							<label class="block mb-6">
+								<input
+									name="email"
+									type="email"
+									class="block w-full h-11 mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+									placeholder="Email Address"
+									required
+								/>
+							</label>
+							<label class="block mb-6">
+								<textarea
+									name="message"
+									class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+									rows="10"
+									placeholder="Tell us why you want to hear from us..."
+									required
+								></textarea>
+							</label>
+							<div class="mb-6">
+								<button type="submit" class="text-white">Submit!</button>
+							</div>
+							<input
+								type="hidden"
+								name="_next"
+								value="http://127.0.0.1:5501/main/public/thank-you.html"
+							/>
+						</form>
+
 						<small class="website-rights"
 							>Newton and Emberly Limited ©2022
 						</small>
